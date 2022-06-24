@@ -1,16 +1,21 @@
 from turtle import Turtle
 from random import choice
 
-qty = [1, 1, 1, 1, 1, 2, 1, 3, 1, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 2]
+qty = [1, 1, 1, 3, 1, 2, 1, 3, 1, 1, 3, 1, 1, 2, 1, 1, 1, 2, 1, 3, 1, 2, 1, 2, 1, 1, 3, 1, 1, 2, 1, 1, 2]
 
 
 class AlienShip(Turtle):
     def __init__(self, x, y):
         super().__init__()
-        self.shape('alienship.gif')
         self.penup()
         self.goto(x, y)
         self.health = choice(qty)
+        if self.health == 1:
+            self.shape('./gifs/alienship.gif')
+        elif self.health == 2:
+            self.shape('./gifs/alienship2.gif')
+        elif self.health == 3:
+            self.shape('./gifs/alienship3.gif')
 
 
 class Aliens:

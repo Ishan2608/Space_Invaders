@@ -10,10 +10,27 @@ screen = turtle.Screen()
 screen.setup(width=1000, height=600)
 screen.bgpic('space.gif')
 screen.title('Space Invaders: Shoot Those Aliens Down. Protect Mother Earth')
-human_ship = 'humanship.gif'
-alien_ship = 'alienship.gif'
+
+# Adding Required GIFs for our spaceships
+
+# human ships
+human_ship = './gifs/humanship.gif'
+human_ship2 = "./gifs/humanship2.gif"
+human_ship3 = "./gifs/humanship3.gif"
+human_ship4 = "./gifs/humanship4.gif"
 screen.addshape(human_ship)
+screen.addshape(human_ship2)
+screen.addshape(human_ship3)
+screen.addshape(human_ship4)
+
+# alien ships
+alien_ship = './gifs/alienship.gif'
+alien_ship2 = './gifs/alienship2.gif'
+alien_ship3 = './gifs/alienship3.gif'
 screen.addshape(alien_ship)
+screen.addshape(alien_ship2)
+screen.addshape(alien_ship3)
+
 screen.tracer(0)
 
 
