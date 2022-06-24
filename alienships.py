@@ -1,4 +1,7 @@
 from turtle import Turtle
+from random import choice
+
+qty = [1, 1, 1, 1, 1, 2, 1, 3, 1, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 2]
 
 
 class AlienShip(Turtle):
@@ -7,11 +10,12 @@ class AlienShip(Turtle):
         self.shape('alienship.gif')
         self.penup()
         self.goto(x, y)
+        self.health = choice(qty)
 
 
 class Aliens:
     def __init__(self):
-        self.y_start = -32
+        self.y_start = 0
         self.y_end = 240
         self.alien_ships = []
         self.alien_bullets = []

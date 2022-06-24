@@ -8,7 +8,7 @@ from scoreboard import Score
 # setting up screen
 screen = turtle.Screen()
 screen.setup(width=1000, height=600)
-screen.bgcolor('black')
+screen.bgpic('space.gif')
 screen.title('Space Invaders: Shoot Those Aliens Down. Protect Mother Earth')
 human_ship = 'humanship.gif'
 alien_ship = 'alienship.gif'
@@ -25,7 +25,6 @@ score = Score()
 
 is_game_paused = False
 timer = 0
-shooting_alien_ships = []
 
 
 def pause_game():
@@ -73,8 +72,10 @@ while playing_game:
 
             for a in aliens.alien_ships:
                 if bullet.distance(a) < 22:
-                    a.goto(3000, 3000)
-                    aliens.alien_ships.remove(a)
+                    a.health -= 1
+                    if a.health == 0:
+                        a.goto(3000, 3000)
+                        aliens.alien_ships.remove(a)
                     bullet.goto(3000, 3000)
                     spaceship.bullets.remove(bullet)
                     score.inc_score()
