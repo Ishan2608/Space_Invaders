@@ -75,7 +75,7 @@ while playing_game:
 
         if gap % 5 == 0:
             for alien in aliens.alien_ships:
-                alien.goto(alien.xcor(), alien.ycor()-1)
+                alien.goto(alien.xcor(), alien.ycor()-0.7)
                 if alien.ycor() < -200:
                     playing_game = False
                     ui.game_over()

@@ -20,7 +20,7 @@ class AlienShip(Turtle):
 
 class Aliens:
     def __init__(self):
-        self.y_start = 0
+        self.y_start = 20
         self.y_end = 240
         self.alien_ships = []
         self.alien_bullets = []
