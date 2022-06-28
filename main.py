@@ -33,8 +33,7 @@ screen.addshape(alien_ship3)
 
 screen.tracer(0)
 
-
-# creating our objects of the Games
+# creating our objects of the Game
 ui = UI()
 spaceship = Spaceship()
 aliens = Aliens()
@@ -63,6 +62,7 @@ while playing_game:
     if not is_game_paused:
         screen.update()
 
+        # if there are no alien ships, then user wins and game is over.
         if len(aliens.alien_ships) == 0:
             ui.game_complete()
             score.write_final_score()
@@ -73,6 +73,7 @@ while playing_game:
 
         time.sleep(0.01)
 
+        # Bring alien ships down every 5 seconds
         if gap % 5 == 0:
             for alien in aliens.alien_ships:
                 alien.goto(alien.xcor(), alien.ycor()-0.7)
@@ -84,6 +85,7 @@ while playing_game:
 
             timer = now
 
+        # Detect Collision of bullets with alien ships
         for bullet in spaceship.bullets:
             bullet.move()
 
