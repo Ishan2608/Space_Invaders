@@ -27,22 +27,35 @@ A clone of famous space invaders game built using python turtle.
   makes it move left and right using <em> backward </em> and <em> forward </em> methods of turtle.
 </p>
 
-<h3> Step 3: Heading </h3>
+<h3> Step 3: The Loop to Run the Game and Shooting some Bullets </h3>
+<p>
+  First of all, setup four screen listeners, left, right, up to shoot and p to pause the game. 
+  Define a function that will reverse the value of a boolean variable everytime it is called. This is to maintain pause and resume functionality of game.
+  To make our spacecraft shoot a bullet, we create another class in separate python file. Define a turtle with circular shape stretched vertically to make it look
+  like a bullet. The spacecraft will have another attribute, a list of bullets. And a new method, <em> shoot </em>. 
+  The shoot function creates a new object from <em> Bullet </em> class, make it go to coordinates of spacecraft, but a little upward and then append it to list of 
+  bullets. <br>
+  In the main.py, an infinite while loop is setup, delayed some milliseconds using <em> time </em> module of python. Inside it, if the game is not paused,
+  then we keep updating the screen and make all the bullets in the list of bullets of spacecraft keep moving forward.
+</p>
+
+<h3> Step 4: Creating our <i>Alien Spacecrafts</i> </h3>
+<p>
+  Aliens are created similarly to spacecraft and bullets. We have to classes, <em> AlienShip </em>, which is an individual alien spacecraft, 
+  a turtle given the shape of a gif image and has an attribute, quantity. <em> Aliens </em> which is the list of all those individual alien spacecrafts. 
+  We define a method in <em> Aliens </em> class to create multiple alien ships and place them in a certain way on the screen, 
+  and call this method inside <em> def __init__(self) </em>.
+  Go back to main.py, create an object from <em> Aliens </em> class, then we can see our aliens. In the loop where we are making all our bullet move forward, 
+  we nest another for loop iterating on all alien ships, see if the bullet got close enough, reduce the quantity of the alienship, which if fall to zero,
+  then ship is first sent outside visible window dimensions, and then removed, the bullet is also removed in a similar way.
+</p>
+
+<h3> Step 5: Making Aliens move </h3>
 <p>
   Text
 </p>
 
-<h3> Step 4: Heading </h3>
-<p>
-  Text
-</p>
-
-<h3> Step 5: Heading </h3>
-<p>
-  Text
-</p>
-
-<h3> Step 6: Heading </h3>
+<h3> Step 6: The Scoreboard </h3>
 <p>
   Text
 </p>
