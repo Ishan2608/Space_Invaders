@@ -6,9 +6,7 @@ A clone of famous space invaders game built using python turtle.
 
 <hr>
 
-<em> </em>
-
-# Guide to build this Project <i>(Work in Progress)</i>
+# Guide to build this Project
 
 <h3> Step 1: Deciding the Structure </h3>
 <p>
@@ -60,7 +58,7 @@ A clone of famous space invaders game built using python turtle.
 <h3> Step 6: The Scoreboard and UI </h3>
 <p>
   Whenever we were recoding the alien ships being shot by our bullets, we increase the score. The scoreboard is another class, created in a separate python file
-  where the class inherits the <em> Turtle class of turtle <\em> module. The turtle is hidden, it's pen pulled up, and then we use <em>write</em> method to
+  where the class inherits the <em> Turtle class of turtle </em> module. The turtle is hidden, it's pen pulled up, and then we use <em>write</em> method to
   write some text on screen. Similarly we create UI class, which writes <em>Space Invaders</em> on screen and make them change colors every few milliseconds 
   whenever we pause the game. There also <em> sleep </em> method of <em> time </em> module is used. We also show texts when game is over. The text varies depending
   on whether the user won or lost.
