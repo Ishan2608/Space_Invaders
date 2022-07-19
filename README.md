@@ -52,12 +52,18 @@ A clone of famous space invaders game built using python turtle.
 
 <h3> Step 5: Making Aliens move </h3>
 <p>
-  Text
+  We use time module, to record seconds when program was started, as then seconds for every iteration, the moment the gap is 5 seconds between the two recorded time
+  periods, we make the alien go down by decreasing their y coordinates. The we make the starting seconds equal to current seconds. We also make a condition,
+  that if y coordinate of any alien ship is below a certain point, the the user has lost the game.
 </p>
 
-<h3> Step 6: The Scoreboard </h3>
+<h3> Step 6: The Scoreboard and UI </h3>
 <p>
-  Text
+  Whenever we were recoding the alien ships being shot by our bullets, we increase the score. The scoreboard is another class, created in a separate python file
+  where the class inherits the <em> Turtle class of turtle <\em> module. The turtle is hidden, it's pen pulled up, and then we use <em>write</em> method to
+  write some text on screen. Similarly we create UI class, which writes <em>Space Invaders</em> on screen and make them change colors every few milliseconds 
+  whenever we pause the game. There also <em> sleep </em> method of <em> time </em> module is used. We also show texts when game is over. The text varies depending
+  on whether the user won or lost.
 </p>
 
 <hr>
