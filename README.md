@@ -7,7 +7,7 @@ A clone of famous space invaders game built using python turtle.
 <hr>
 <h1> Program Flowchart</h1>
   <div>
-    <img src="./Space Invaders Flowchart.png" alt="Code Output">
+    <img src="./Space Invaders Flowchart.png" alt="Program Flowchart">
   </div>
 <hr>
 
