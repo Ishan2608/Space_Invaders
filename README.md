@@ -1,5 +1,6 @@
 # Space Invaders
-A clone of famous space invaders game built using python turtle.
+Using Python's "turtle" library, I have recreated the classic Space Invaders game, bringing nostalgia to life in a modern context. Players can embark on an exciting journey to defend the Earth by controlling a spaceship and battling against waves of descending alien invaders. With vibrant visuals, engaging gameplay, and challenging levels, this clone tries to capture the essence of the original game while showcasing my programming skills and creativity. Get ready for an exhilarating retro gaming experience that will keep you on the edge of your seat!
+
 <div>
   <img src="./code_output.JPG" alt="Code Output">
 </div>
